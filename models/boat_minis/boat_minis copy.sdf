@@ -1,0 +1,1814 @@
+<sdf version='1.6'>
+  <model name='boat_minis'>
+    <pose>0 0 0.0 0 0 0</pose>
+    <link name='base_link'>
+      <inertial>
+        <pose >-3.9789257506472566e-11 1.012143865601373e-09 0.04330489141524868 0 0 0</pose>
+        <mass>4.78319696007218</mass>
+        <inertia>
+          <ixx>0.051347</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.038498</iyy>
+          <iyz>0</iyz>
+          <izz>0.078462</izz>
+        </inertia>
+      </inertial>
+
+      <visual name='base_link_visual'>
+        <pose>0 0 0.0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://boat_minis/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+      </visual>
+
+
+      <collision name='base_link_collision'>
+        <pose>0 0 0.0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://boat_minis/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+
+<link name="v2_support_beam02_1">
+  <inertial>
+  <pose>2.3447910280083307e-15 -1.473600655507723e-05 -0.0005000000000000247 0 0 0</pose>
+    <mass>0.061888018579604125</mass>
+  <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.001286</iyy>
+          <iyz>-0.0</iyz>
+          <izz>0.001288</izz>
+        </inertia>
+  </inertial>
+  <visual name="v2_support_beam02_1_visual">
+  <pose>0.0 -0.1275 0.0021 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam02_1.stl</uri>
+      </mesh>
+    
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="v2_support_beam02_1_collision">
+  <pose>0.0 -0.1275 0.0021 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam02_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="v2_support_beam04_1">
+  <inertial>
+    
+   <pose>-2.3447910280083307e-15 1.4736006555132741e-05 -0.0005000000000000156 0 0 0</pose>
+   <mass>0.061888018579604125</mass>
+  
+  <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.001286</iyy>
+          <iyz>-0.0</iyz>
+          <izz>0.001288</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="v2_support_beam04_1_visual">
+     <pose>0.0 0.1275 0.0021 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam04_1.stl</uri>
+      </mesh>
+    </geometry>
+     <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="v2_support_beam04_1_collision">
+    <pose>0.0 0.1275 0.0021 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam04_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_support01_2">
+  <inertial>
+    
+    <pose>-0.04400002005196085 0.02166892426273051 -0.05123833632081263 0 0 0</pose>
+     <mass>0.7563645564303094</mass>
+  
+  <inertia>
+          <ixx>0.001539</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.002042</iyy>
+          <iyz>3e-06</iyz>
+          <izz>0.000929</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_support01_2_visual">
+
+    <pose>-0.243899 -0.1265 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_2.stl</uri>
+      </mesh>
+    </geometry>
+     <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_support01_2_collision">
+
+    <pose>-0.243899 -0.1265 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_support01_1">
+  <inertial>
+   <pose>0.04400002097690628 0.021668924262728262 -0.05123833632081288 0 0 0</pose>
+       <mass>0.7563645564303094</mass>
+  
+  <inertia>
+          <ixx>0.001539</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.002042</iyy>
+          <iyz>3e-06</iyz>
+          <izz>0.000929</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_support01_1_visual">
+    <pose>0.243899 -0.1265 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_1.stl</uri>
+      </mesh>
+    </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_support01_1_collision">
+    <pose>0.243899 -0.1265 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_support01_3">
+  <inertial>
+    <pose>0.0440000209769065 -0.004331075498855308 -0.05123833632081256 0 0 0</pose>
+         <mass>0.7563645564303094</mass>
+  
+  <inertia>
+          <ixx>0.001539</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.002042</iyy>
+          <iyz>3e-06</iyz>
+          <izz>0.000929</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_support01_3_visual">
+    <pose>0.243899 0.1265 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_3.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_support01_3_collision">
+    <pose>0.243899 0.1265 0.0031 0 0 0</pose>
+
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_3.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_support01_4">
+  <inertial>
+<pose>-0.04400002005196085 -0.004331075498853115 -0.05123833632081288 0 0 0</pose>
+           <mass>0.7563645564303094</mass>
+  
+  <inertia>
+          <ixx>0.001539</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.002042</iyy>
+          <iyz>3e-06</iyz>
+          <izz>0.000929</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_support01_4_visual">
+    <pose>-0.243899 0.1265 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_4.stl</uri>
+      </mesh>
+    </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+
+  <collision name="floater_support01_4_collision">
+    <pose>-0.243899 0.1265 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_4.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="v2_support_beam04_2">
+  <inertial>
+    <pose>0.24389900000000234 0.000985263993444896 0.0004999999999996999 0 0 0</pose>
+    <mass>0.061888018579604125</mass>
+  
+  <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.001286</iyy>
+          <iyz>3e-06</iyz>
+          <izz>0.001288</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="v2_support_beam04_2_visual">
+    <pose>0.243899 -0.1525 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam04_2.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="v2_support_beam04_2_collision">
+    <pose>0.243899 -0.1525 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam04_2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="guincho_1">
+  <inertial>
+   <pose>0.3249851174364672 -0.11404013695896392 0.08048686430368082 0 0 0</pose>
+      <mass>0.5746024533277414</mass>
+  
+  <inertia>
+          <ixx>0.00071</ixx>
+          <ixy>-2e-06</ixy>
+          <ixz>1e-06</ixz>
+          <iyy>0.000707</iyy>
+          <iyz>2e-06</iyz>
+          <izz>0.001004</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="guincho_1_visual">
+    <pose>0.324899 -0.307 0.056856 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/guincho_1.stl</uri>
+      </mesh>
+    </geometry>
+       <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="guincho_1_collision">
+    <pose>0.324899 -0.307 0.056856 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/guincho_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="v2_support_beam04_3">
+  <inertial>
+  <pose>-0.0442499999999973 -0.15060015832347387 0.0036999999999999846 0 0 0</pose>
+        <mass>0.061888018579604125</mass>
+  
+  <inertia>
+          <ixx>1e-06</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.001286</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.001288</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="v2_support_beam04_3_visual">
+    <pose>-0.04425 -0.382756 0.0063 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam04_3.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="v2_support_beam04_3_collision">
+    <pose>-0.04425 -0.382756 0.0063 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/v2_support_beam04_3.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_support01_6">
+  <inertial>
+    <pose>-0.0440000200519636 0.021668501945811686 -0.051238336320810596 0 0 0</pose>
+          <mass>0.7563645564303094</mass>
+  
+  <inertia>
+          <ixx>0.001539</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.002042</iyy>
+          <iyz>3e-06</iyz>
+          <izz>0.000929</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_support01_6_visual">
+
+    <pose>-0.243899 -0.231171 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_6.stl</uri>
+      </mesh>
+    </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_support01_6_collision">
+    <pose>-0.243899 -0.231171 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_6.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_support01_5">
+  <inertial>
+  <pose>0.04400002097690925 0.02166850194580952 -0.05123833632081053 0 0 0</pose>
+     <mass>0.7563645564303094</mass>
+  
+  <inertia>
+          <ixx>0.001539</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.002042</iyy>
+          <iyz>3e-06</iyz>
+          <izz>0.000929</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_support01_5_visual">
+    <pose>0.243899 -0.231171 0.0031 0 0 0</pose>
+
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_5.stl</uri>
+      </mesh>
+    </geometry>
+            <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_support01_5_collision">
+    <pose>0.243899 -0.231171 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_support01_5.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_1">
+  <inertial>
+  <pose>0.19989902051443345 -0.12950000011921006 0.054755793982614126 0 0 0</pose>
+  <mass>2.9615504918866855</mass>
+  
+  <inertia>
+          <ixx>0.160837</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.005775</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.160837</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_1_visual">
+    <pose>0.399798 -0.239 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_1_collision">
+    <pose>0.399798 -0.239 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_2">
+  <inertial>
+  <pose>-0.19989902051443334 -0.12950000011920781 0.05475579398261437 0 0 0</pose>
+    <mass>2.9615504918866855</mass>
+  
+  <inertia>
+          <ixx>0.160837</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.005775</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.160837</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_2_visual">
+    <pose>-0.399798 -0.239 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_2.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_2_collision">
+    <pose>-0.399798 -0.239 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_tip_1">
+  <inertial>
+   <pose>0.19989863138049022 0.29684046360499017 0.07168582687358308 0 0 0</pose>
+    <mass>2.0270242584607208</mass>
+  
+  <inertia>
+          <ixx>0.002845</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.003215</iyy>
+          <iyz>-0.000486</iyz>
+          <izz>0.001827</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_tip_1_visual">
+    <pose>0.399798 -0.219 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tip_1.stl</uri>
+      </mesh>
+    </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_tip_1_collision">
+    <pose>0.399798 -0.219 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tip_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_tip_2">
+  <inertial>
+  <pose>-0.1998994096483766 0.2968404636049925 0.0716858268735833 0 0 0</pose>
+    
+                  <mass>2.0270242584607208</mass>
+  
+  <inertia>
+          <ixx>0.002845</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.003215</iyy>
+          <iyz>-0.000486</iyz>
+          <izz>0.001827</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_tip_2_visual">
+
+    <pose>-0.399798 -0.219 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tip_2.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_tip_2_collision">
+    <pose>-0.399798 -0.219 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tip_2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_tipV2_1">
+  <inertial>
+   
+  <pose>0.19989856932180552 0.28402369233678276 0.07065653475120828 0 0 0</pose>
+                    <mass>2.074862155631664</mass>
+  
+  <inertia>
+          <ixx>0.002971</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.003311</iyy>
+          <iyz>0.000474</iyz>
+          <izz>0.001861</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_tipV2_1_visual">
+    <pose>0.399798 0.581 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tipV2_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_tipV2_1_collision">
+    <pose>0.399798 0.581 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tipV2_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_tipV2_2">
+  <inertial>
+  <pose>-0.1998994717070613 0.28402369233678504 0.07065653475120853 0 0 0</pose>
+    
+    <mass>2.074862155631664</mass>
+  
+  <inertia>
+          <ixx>0.002971</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.003311</iyy>
+          <iyz>0.000474</iyz>
+          <izz>0.001861</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_tipV2_2_visual">
+    <pose>-0.399798 0.581 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tipV2_2.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_tipV2_2_collision">
+    <pose>-0.399798 0.581 0.109512 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_tipV2_2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component9_1">
+  <inertial>
+    
+    <pose>0.0004040931901038991 0.00863142040130871 0.005093935328668137 0 0 0</pose>
+    
+    <mass>0.19481143525514483</mass>
+  
+  <inertia>
+          <ixx>2.2e-05</ixx>
+          <ixy>2e-06</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.000146</iyy>
+          <iyz>-1e-06</iyz>
+          <izz>0.000155</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="Component9_1_visual">
+     <pose>-0.199899 0.1595 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Component9_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="Component9_1_collision">
+  <pose>-0.199899 0.1595 0.0031 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Component9_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component10_1">
+  <inertial>
+    <pose>0.006999979485432295 9.834751346637916e-10 0.014868008543912313 0 0 0</pose>
+      <mass>0.07060990968818463</mass>
+  
+  <inertia>
+          <ixx>8e-06</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>8e-06</iyy>
+          <iyz>-0.0</iyz>
+          <izz>5e-06</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="Component10_1_visual">
+    <pose>-0.192899 0.1485 -0.0184 0 0 0</pose>
+    
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Component10_1.stl</uri>
+      </mesh>
+    </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="Component10_1_collision">
+    <pose>-0.192899 0.1485 -0.0184 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Component10_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gps_antenna_v1_1">
+  <inertial>
+   <pose>-2.051443340200798e-08 9.834766612204504e-10 0.049999999999999836 0 0 0</pose>
+        <mass>0.24661502330679874</mass>
+  
+  <inertia>
+          <ixx>0.000212</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.000212</iyy>
+          <iyz>-0.0</iyz>
+          <izz>1.2e-05</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="gps_antenna_v1_1_visual">
+     <pose>-0.199899 0.1485 -0.0304 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/gps_antenna_v1_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="gps_antenna_v1_1_collision">
+    <pose>-0.199899 0.1485 -0.0304 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/gps_antenna_v1_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="UBLOX_ANN-MB-00_GNSS_ANTENNA_v2_1">
+  <inertial>
+  <pose>-1.4068622794516372e-08 0.00047145769736475773 0.010274547438117343 0 0 0</pose>
+    
+    <mass>0.5455610936895873</mass>
+  
+  <inertia>
+          <ixx>0.000156</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.000171</iyy>
+          <iyz>-0.0</iyz>
+          <izz>0.000283</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="UBLOX_ANN-MB-00_GNSS_ANTENNA_v2_1_visual">
+    <pose>-0.199899 0.1485 -0.1304 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/UBLOX_ANN-MB-00_GNSS_ANTENNA_v2_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="UBLOX_ANN-MB-00_GNSS_ANTENNA_v2_1_collision">
+    <pose>-0.199899 0.1485 -0.1304 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/UBLOX_ANN-MB-00_GNSS_ANTENNA_v2_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_bottom_1">
+  <inertial>
+    <pose>0.044000020514445654 0.018820846713502815 -0.0024309423097564065 0 0 0</pose>
+     <mass>0.20416393207732336</mass>
+  
+  <inertia>
+          <ixx>4.7e-05</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.000169</iyy>
+          <iyz>-0.0</iyz>
+          <izz>0.000215</izz>
+        </inertia>
+ 
+  </inertial>
+  <visual name="floater_bottom_1_visual">
+    <pose>0.243899 0.1525 0.105756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_bottom_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_bottom_1_collision">
+    <pose>0.243899 0.1525 0.105756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_bottom_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="floater_bottom_2">
+  <inertial>
+   <pose>-0.04400002051442162 0.01882084671350509 -0.0024309423097567256 0 0 0</pose>
+   <mass>0.20416393207732336</mass>
+  
+  <inertia>
+          <ixx>4.7e-05</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.000169</iyy>
+          <iyz>-0.0</iyz>
+          <izz>0.000215</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="floater_bottom_2_visual">
+    <pose>-0.243899 0.1525 0.105756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_bottom_2.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="floater_bottom_2_collision">
+    <pose>-0.243899 0.1525 0.105756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/floater_bottom_2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component14_1">
+  <inertial>
+    
+    <pose>-0.04399978974292221 -0.006709047132329032 -0.004804556282958991 0 0 0</pose>
+  <mass>0.24755974026731303</mass>
+  
+  <inertia>
+          <ixx>6.2e-05</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.000179</iyy>
+          <iyz>1e-06</iyz>
+          <izz>0.000224</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="Component14_1_visual">
+    <pose>-0.243899 -0.1525 0.105756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Component14_1.stl</uri>
+      </mesh>
+    </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="Component14_1_collision">
+    <pose>-0.243899 -0.1525 0.105756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Component14_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PING-M-BASE-R2-PUBLIC_1">
+  <inertial>
+    <pose>0.008485760852353447 0.008288741486511098 -0.008686156198827538 0 0 0</pose>
+  
+   <mass>0.11893862396722066</mass>
+  
+  <inertia>
+          <ixx>2.9e-05</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>2.9e-05</iyy>
+          <iyz>-0.0</iyz>
+          <izz>4.1e-05</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="PING-M-BASE-R2-PUBLIC_1_visual">
+    <pose>-0.191413 -0.138439 0.127756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/PING-M-BASE-R2-PUBLIC_1.stl</uri>
+      </mesh>
+    </geometry>
+     <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="PING-M-BASE-R2-PUBLIC_1_collision">
+    <pose>-0.191413 -0.138439 0.127756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/PING-M-BASE-R2-PUBLIC_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PING-M-HEAD-R3-PUBLIC_1">
+  <inertial>
+  
+    <pose>-2.3914764751831186e-07 4.1160944710960656e-07 0.0012722999947316627 0 0 0</pose>
+    <mass>0.17698655934000346</mass>
+  
+  <inertia>
+          <ixx>2.5e-05</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>2.5e-05</iyy>
+          <iyz>-0.0</iyz>
+          <izz>4.4e-05</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="PING-M-HEAD-R3-PUBLIC_1_visual">
+     <pose>-0.199899 -0.146924 0.156756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/PING-M-HEAD-R3-PUBLIC_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="PING-M-HEAD-R3-PUBLIC_1_collision">
+    <pose>-0.199899 -0.146924 0.156756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/PING-M-HEAD-R3-PUBLIC_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_propeller_link">
+  <inertial>
+  <pose>4.3558450485425837e-07 0.01865483590374345 -0.04851004598116235 0 0 0</pose>
+      <mass>1.526567359638535</mass>
+  
+  <inertia>
+          <ixx>0.001286</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.001429</iyy>
+          <iyz>4e-06</iyz>
+          <izz>0.001254</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="left_propeller_link_visual">
+    <pose>-0.199899 0.1544 0.110756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/T200-ASM-CW-THRUSTER-R1_v1__8__1.stl</uri>
+      </mesh>
+    </geometry>
+      <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="left_propeller_link_collision">
+  <pose>-0.199899 0.1544 0.110756 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/T200-ASM-CW-THRUSTER-R1_v1__8__1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_propeller_link">
+  <inertial>
+  <pose>4.7661337207460797e-07 0.018654835903741118 -0.0485100459811621 0 0 0</pose>
+    <mass>1.526567359638535</mass>
+  
+  <inertia>
+          <ixx>0.001286</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-0.0</ixz>
+          <iyy>0.001429</iyy>
+          <iyz>4e-06</iyz>
+          <izz>0.001254</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="right_propeller_link_visual">
+    <pose>0.199899 0.1544 0.110756 0 0 0</pose>
+    
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/T200-ASM-CW-THRUSTER-R1_v1__8__2.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="right_propeller_link_collision">
+    <pose>0.199899 0.1544 0.110756 0 0 0</pose>
+    
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/T200-ASM-CW-THRUSTER-R1_v1__8__2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Intel_Realsense_D435_v4_1">
+  <inertial>
+    
+   <pose>-0.1214546802696874 0.1366362821108133 0.029630236063533294 0 0 0</pose>
+   <mass>0.10620881027228146</mass>
+  
+  <inertia>
+          <ixx>3.4e-05</ixx>
+          <ixy>-0.0</ixy>
+          <ixz>-1e-06</ixz>
+          <iyy>7.3e-05</iyy>
+          <iyz>0.0</iyz>
+          <izz>8.6e-05</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="Intel_Realsense_D435_v4_1_visual">
+     <pose>-0.1205 0.0148 -0.082398 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Intel_Realsense_D435_v4_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="Intel_Realsense_D435_v4_1_collision">
+    <pose>-0.1205 0.0148 -0.082398 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/Intel_Realsense_D435_v4_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pH-probe__Atlas_Instruments__v4_1">
+  <inertial>
+   <pose>1.06746795411456e-09 2.8884232827763867e-07 -0.0746339592828971 0 0 0</pose>
+  <mass>0.14685250838666847</mass>
+  
+  <inertia>
+          <ixx>0.0003</ixx>
+          <ixy>0.0</ixy>
+          <ixz>-1e-06</ixz>
+          <iyy>0.0003</iyy>
+          <iyz>0.0</iyz>
+          <izz>3e-06</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="pH-probe__Atlas_Instruments__v4_1_visual">
+    <pose>0.0 -0.192835 0.0021 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/pH-probe__Atlas_Instruments__v4_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="pH-probe__Atlas_Instruments__v4_1_collision">
+    <pose>0.0 -0.192835 0.0021 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/pH-probe__Atlas_Instruments__v4_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="echo_sounder_kogger_v5_1">
+  <inertial>
+   <pose>2.0514436177565543e-08 -0.00018270811268406018 -4.0642365764509414e-07 0 0 0</pose>
+  <mass>0.06047000371482711</mass>
+  
+  <inertia>
+          <ixx>4e-06</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>4e-06</iyy>
+          <iyz>0.0</iyz>
+          <izz>4e-06</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="echo_sounder_kogger_v5_1_visual">
+    <pose>0.199899 -0.5575 0.082445 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/echo_sounder_kogger_v5_1.stl</uri>
+      </mesh>
+    </geometry>
+    <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="echo_sounder_kogger_v5_1_collision">
+    <pose>0.199899 -0.5575 0.082445 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/echo_sounder_kogger_v5_1.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<link name="echo_sounder_kogger_v5_2">
+  <inertial>
+  <pose>-2.0514430654205995e-08 -0.00018270811268161768 -4.0642365727039387e-07 0 0 0</pose>
+  
+  <mass>0.06047000371482711</mass>
+  
+  <inertia>
+          <ixx>4e-06</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>4e-06</iyy>
+          <iyz>0.0</iyz>
+          <izz>4e-06</izz>
+        </inertia>
+  
+  </inertial>
+  <visual name="echo_sounder_kogger_v5_2_visual">
+
+    <pose>-0.199899 -0.5575 0.082445 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/echo_sounder_kogger_v5_2.stl</uri>
+      </mesh>
+    </geometry>
+     <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+  </visual>
+  <collision name="echo_sounder_kogger_v5_2_collision">
+     <pose>-0.199899 -0.5575 0.082445 0 0 0</pose>
+    <geometry>
+      <mesh>
+          <scale>0.001 0.001 0.001</scale>
+          <uri>model://boat_minis/meshes/echo_sounder_kogger_v5_2.stl</uri>
+      </mesh>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid1" type="fixed">
+   <pose>0.0 0.1275 -0.0021 0 0 0</pose>
+  <child>v2_support_beam02_1</child>
+  <parent>base_link</parent>
+</joint>
+
+<joint name="Rigid2" type="fixed">
+  <pose>0.0 0.1275 -0.0021 0 0 0</pose>
+  <child>v2_support_beam04_1</child>
+  <parent>base_link</parent>
+</joint>
+
+<joint name="Rigid3" type="fixed">
+  <pose>0.243899 -0.001 -0.001 0 0 0</pose>
+  <child>floater_support01_2</child>
+  <parent>v2_support_beam02_1</parent>
+</joint>
+
+<joint name="Rigid4" type="fixed">
+  <pose>-0.243899 -0.001 -0.001 0 0 0</pose>
+    <child>floater_support01_1</child>
+  <parent>v2_support_beam02_1</parent>
+</joint>
+
+<joint name="Rigid5" type="fixed">
+  <pose>-0.243899 0.001 -0.001 0 0 0</pose>
+  <child>floater_support01_3</child>
+  <parent>v2_support_beam04_1</parent>
+</joint>
+
+<joint name="Rigid6" type="fixed">
+  <pose>0.243899 0.001 -0.001 0 0 0</pose>
+  <child>floater_support01_4</child>
+  <parent>v2_support_beam04_1</parent>
+</joint>
+
+<joint name="Rigid7" type="fixed">
+  <pose>0.0 0.026 0.0 0 0 0</pose>
+  <child>floater_support01_1</child>
+  <parent>v2_support_beam04_2</parent>
+
+</joint>
+
+<joint name="Rigid8" type="fixed">
+   <pose>-0.081 0.1545 -0.053756 0 0 0</pose>
+  
+  <child>guincho_1</child>
+  <parent>v2_support_beam04_2</parent>
+</joint>
+
+<joint name="Rigid9" type="fixed">
+  <pose>0.369149 0.075756 0.050556 0 0 0</pose>
+  <child>v2_support_beam04_3</child>
+  <parent>guincho_1</parent>
+  
+</joint>
+
+<joint name="Rigid10" type="fixed">
+  <pose>0.199649 -0.151585 0.0032 0 0 0</pose>
+
+  <child>floater_support01_6</child>
+  <parent>v2_support_beam04_3</parent>
+  
+</joint>
+
+<joint name="Rigid11" type="fixed">
+<pose>-0.288149 -0.151585 0.0032 0 0 0</pose>
+    <child>floater_support01_5</child>
+  <parent>v2_support_beam04_3</parent>
+
+</joint>
+
+<joint name="Rigid12" type="fixed">
+  <pose>-0.155899 0.1125 -0.106412 0 0 0</pose>
+
+  <child>floater_1</child>
+  <parent>floater_support01_1</parent>
+  
+</joint>
+
+<joint name="Rigid13" type="fixed">
+  <pose>0.155899 0.1125 -0.106412 0 0 0</pose>
+  <child>floater_2</child>
+  <parent>floater_support01_2</parent>
+
+</joint>
+
+<joint name="Rigid14" type="fixed">
+<pose>0.0 -0.02 0.0 0 0 0</pose>
+
+    <child>floater_tip_1</child>
+  <parent>floater_1</parent>
+
+</joint>
+
+<joint name="Rigid15" type="fixed">
+  <pose>0.0 -0.02 0.0 0 0 0</pose>
+
+
+      <child>floater_tip_2</child>
+  <parent>floater_2</parent>
+</joint>
+
+<joint name="Rigid16" type="fixed">
+  <pose>0.0 -0.82 0.0 0 0 0</pose>
+
+      <child>floater_tipV2_1</child>
+  <parent>floater_1</parent>
+</joint>
+
+<joint name="Rigid17" type="fixed">
+  <pose>0.0 -0.82 0.0 0 0 0</pose>
+
+        <child>floater_tipV2_2</child>
+  <parent>floater_2</parent>
+
+</joint>
+
+<joint name="Rigid18" type="fixed">
+  <pose>-0.044 -0.033 0.0 0 0 0</pose>
+  <child>Component9_1</child>
+  <parent>floater_support01_4</parent>
+</joint>
+
+<joint name="Rigid19" type="fixed">
+
+<pose>-0.007 0.011 0.0215 0 0 0</pose>
+  <child>Component10_1</child>
+  <parent>Component9_1</parent>
+
+  
+</joint>
+
+<joint name="Rigid20" type="fixed">
+
+  <pose>0.007 0.0 0.012 0 0 0</pose>
+    <child>gps_antenna_v1_1</child>
+  <parent>Component10_1</parent>
+
+</joint>
+
+<joint name="Rigid21" type="fixed">
+  <pose>0.0 0.0 0.1 0 0 0</pose>
+      <child>UBLOX_ANN-MB-00_GNSS_ANTENNA_v2_1</child>
+  <parent>gps_antenna_v1_1</parent>
+
+</joint>
+
+<joint name="Rigid22" type="fixed">
+  <pose>0.0 -0.026 -0.102656 0 0 0</pose>
+
+  <child>floater_bottom_1</child>
+  <parent>floater_support01_3</parent>
+
+</joint>
+
+<joint name="Rigid23" type="fixed">
+  <pose>0.0 -0.026 -0.102656 0 0 0</pose>
+    <child>floater_bottom_2</child>
+  <parent>floater_support01_4</parent>
+
+
+</joint>
+
+<joint name="Rigid24" type="fixed">
+<pose>0.0 0.026 -0.102656 0 0 0</pose>
+      <child>Component14_1</child>
+  <parent>floater_support01_2</parent>
+
+</joint>
+
+<joint name="Rigid25" type="fixed">
+  <pose>-0.052486 -0.014061 -0.022 0 0 0</pose>
+        <child>PING-M-BASE-R2-PUBLIC_1</child>
+  <parent>Component14_1</parent>
+
+</joint>
+
+<joint name="Rigid26" type="fixed">
+  <pose>0.008486 0.008485 -0.029 0 0 0</pose>
+  <child>PING-M-HEAD-R3-PUBLIC_1</child>
+  <parent>PING-M-BASE-R2-PUBLIC_1</parent>
+
+</joint>
+
+<joint name="left_engine_propeller_joint" type='revolute'>
+<pose>-0.044 -0.0019 -0.005 0 0 0</pose>
+  <child>left_propeller_link</child>
+  <parent>floater_bottom_2</parent>
+
+    <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <!-- <damping>0.05</damping>
+          <friction>0.05</friction> -->
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+
+</joint>
+
+<joint name="right_engine_propeller_joint" type='revolute'>
+<pose>0.044 -0.0019 -0.005 0 0 0</pose>
+    <child>right_propeller_link</child>
+  <parent>floater_bottom_1</parent>
+
+  <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <!-- <damping>0.05</damping>
+          <friction>0.05</friction> -->
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+
+</joint>
+
+<joint name="Rigid29" type="fixed">
+  <pose>0.1205 -0.0148 0.082398 0 0 0</pose>
+
+      <child>Intel_Realsense_D435_v4_1</child>
+  <parent>base_link</parent>
+
+</joint>
+
+<joint name="Slider30" type="prismatic">
+  <pose>0.324899 -0.114165 0.054756 0 0 0</pose>
+
+        <child>pH-probe__Atlas_Instruments__v4_1</child>
+  <parent>guincho_1</parent>
+
+
+  <axis>
+        <xyz>-0.0 0 -1.0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+
+      </axis>
+
+</joint>
+
+<joint name="Rigid31" type="fixed">
+  <pose>0.199899 0.3385 0.027067 0 0 0</pose>
+  <child>echo_sounder_kogger_v5_1</child>
+  <parent>floater_tip_1</parent>
+
+
+</joint>
+
+<joint name="Rigid32" type="fixed">
+<pose>-0.199899 0.3385 0.027067 0 0 0</pose>
+  <child>echo_sounder_kogger_v5_2</child>
+  <parent>floater_tip_2</parent>
+
+
+</joint>
+
+
+
+
+
+
+##########################################################
+
+
+  
+    
+    <plugin name='usv_dynamics_wamv_dynamics_plugin' filename='libgazebo_usv_dynamics_plugin.so'>
+      <bodyName>base_link</bodyName>
+      <waterLevel>0.0</waterLevel>
+      <waterDensity>997.8</waterDensity>
+      <xDotU>0.0</xDotU>
+      <yDotV>0.0</yDotV>
+      <nDotR>0.0</nDotR>
+      <xU>51.3</xU>
+      <xUU>72.4</xUU>
+      <yV>40.0</yV>
+      <yVV>0.0</yVV>
+      <zW>500.0</zW>
+      <kP>50.0</kP>
+      <mQ>50.0</mQ>
+      <nR>400.0</nR>
+      <nRR>0.0</nRR>
+      <hullRadius>0.213</hullRadius>
+      <boatWidth>0.5</boatWidth>
+      <boatLength>0.9</boatLength>
+      <length_n>2</length_n>
+      <wave_model>ocean_waves</wave_model>
+    </plugin>
+   
+
+    <link name='imu_link'>
+      <!-- <pose>0 0 0 0 0 3.1415927</pose> -->
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.015</mass>
+        <inertia>
+          <ixx>1e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1e-05</izz>
+        </inertia>
+      </inertial>
+      <sensor name="imu_sensor" type="imu">
+        <pose>0 0 0 3.141593 0 0</pose>
+        <always_on>1</always_on>
+        <update_rate>1000.0</update_rate>
+      </sensor>
+    </link>
+    <joint name='imu_joint' type='revolute'>
+      <child>imu_link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.7</damping>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <plugin name="ArduCopter_Plugin" filename="libArduPilotPlugin.so">
+      <fdm_addr>127.0.0.1</fdm_addr>
+      <fdm_port_in>9002</fdm_port_in>
+      <fdm_port_out>9003</fdm_port_out>
+      <!--
+          Require by APM :
+          Only change model and gazebo from XYZ to XY-Z coordinates
+      -->
+      <!-- 3.141593 -->
+      <modelXYZToAirplaneXForwardZDown>0 0 0 3.141593 0 0</modelXYZToAirplaneXForwardZDown>
+      <gazeboXYZToNED>0 0 0 3.141593 0 0</gazeboXYZToNED>
+      <imuName>boat::imu_link::imu_sensor</imuName>
+      <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
+      <!--
+          incoming control command [0, 1]
+          so offset it by 0 to get [0, 1]
+          and divide max target by 1.
+          offset = 0
+          multiplier = 838 max rpm / 1 = 838
+        -->
+      <control channel="0">
+        <type>VELOCITY</type>
+        <offset>-0.5</offset>
+        <p_gain>1</p_gain>
+        <i_gain>0</i_gain>
+        <d_gain>0</d_gain>
+        <i_max>0</i_max>
+        <i_min>0</i_min>
+        <cmd_max>10</cmd_max>
+        <cmd_min>-10</cmd_min>
+        <jointName>left_engine_propeller_joint</jointName>
+        <multiplier>-100</multiplier>
+      </control>
+      <control channel="2">
+        <type>VELOCITY</type>
+        <offset>-0.5</offset>
+        <p_gain>1</p_gain>
+        <i_gain>0</i_gain>
+        <d_gain>0</d_gain>
+        <i_max>0</i_max>
+        <i_min>0</i_min>
+        <cmd_max>10</cmd_max>
+        <cmd_min>-10</cmd_min>
+        <jointName>right_engine_propeller_joint</jointName>
+        <multiplier>-100</multiplier>
+      </control>
+      
+    </plugin>
+    <plugin name="rotor_1_blade_1" filename="libLiftDragPlugin.so">
+      <a0>2</a0>
+      <alpha_stall>4</alpha_stall>
+      <cla>10.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.00</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>997</air_density>
+      <cp>0.084 0 0</cp>
+      <forward>0 1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>right_propeller_link</link_name>
+    </plugin>
+    <plugin name="rotor_1_blade_2" filename="libLiftDragPlugin.so">
+      <a0>2</a0>
+      <alpha_stall>4</alpha_stall>
+      <cla>10.2500</cla>
+      <cda>0.10</cda>
+      <cma>0.00</cma>
+      <cla_stall>-0.025</cla_stall>
+      <cda_stall>0.0</cda_stall>
+      <cma_stall>0.0</cma_stall>
+      <area>0.002</area>
+      <air_density>997</air_density>
+      <cp>-0.084 0 0</cp>
+      <forward>0 -1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>left_propeller_link</link_name>
+    </plugin>
+
+
+        
+
+
+  </model>
+</sdf>
