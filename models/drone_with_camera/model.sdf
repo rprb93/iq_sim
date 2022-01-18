@@ -1,12 +1,13 @@
 <?xml version='1.0'?>
-<sdf version="1.6" >
+<sdf version="1.6">
   <model name="drone_with_camera">
     <include>
       <uri>model://iris_base</uri>
     </include>
 
-    <link name="cam_link">
-      <pose>0 0 -0.02 0 0 0 </pose>
+    <!-- add camera -->
+    <link name="drone_cam">
+      <pose>0 0 0 0 0 0 </pose>
       <inertial>
         <mass>0.01</mass>
         <inertia>
@@ -15,60 +16,142 @@
           <izz>0.001</izz>
         </inertia>
       </inertial>
-      <!-- <collision name="collision">
-          <geometry>
-            <cylinder>
-              <radius>.005</radius>
-              <length>.018</length>
-            </cylinder>
-          </geometry>
-        </collision> -->
-      <visual name='cam_link'>
-    	<pose>0 0 0.15 0 1.5707 0</pose>
-    	<geometry>
-    		<cylinder>
-    			<radius>.005</radius>
-    			<length>.018</length>
-    		</cylinder>
-    	</geometry>
-    </visual>
-    <sensor name="cam" type="camera" >
-      <pose>0 0 0.15 0 0 0</pose>
-      <camera>
-        <horizontal_fov>1.2</horizontal_fov>
-        <image>
-          <width>640</width>
-          <height>480</height>
-        </image>
-        <clip>
-          <near>0.1</near>
-          <far>1000</far>
-        </clip>
-      </camera>
-      <always_on>1</always_on>
-      <update_rate>30</update_rate>
-      <visualize>true</visualize>
-      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
-        <always_on>true</always_on>
-        <update_rate>30</update_rate>
-        <cameraName>drone1_cam</cameraName>
-        <imageTopicName>image_raw</imageTopicName>
-        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-        <frameName>drone1_camera_link</frameName>
-      </plugin>
-    </sensor>
+      <visual name='drone_cam'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.005</radius>
+            <length>.018</length>
+          </cylinder>
+        </geometry>
+      </visual>
+      <sensor name="drone1_camera" type="depth">
+        <pose>0 0 0 0 0 0</pose>
+        <update_rate>15</update_rate>
+        <camera>
+          <horizontal_fov>2</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>1000</far>
+          </clip>
+        </camera>
+        <plugin name="drone1_cam_controller" filename="libgazebo_ros_openni_kinect.so">
+          <baseline>0.2</baseline>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>1.0</updateRate>
+          <cameraName>/drone1/camera</cameraName>
+          <imageTopicName>/drone1/camera/color/image_raw</imageTopicName>
+          <cameraInfoTopicName>/drone1/camera/color/camera_info</cameraInfoTopicName>
+          <depthImageTopicName>/drone1/camera/depth/image_raw</depthImageTopicName>
+          <depthImageInfoTopicName>/drone1/camera/depth/camera_info</depthImageInfoTopicName>
+          <pointCloudTopicName>/drone1/camera/depth/points</pointCloudTopicName>
+          <frameName>drone1_camera_link</frameName>
+          <pointCloudCutoff>0.1</pointCloudCutoff>
+          <pointCloudCutoffMax>1000</pointCloudCutoffMax>
+          <distortionK1>0.00000001</distortionK1>
+          <distortionK2>0.00000001</distortionK2>
+          <distortionK3>0.00000001</distortionK3>
+          <distortionT1>0.00000001</distortionT1>
+          <distortionT2>0.00000001</distortionT2>
+          <CxPrime>0</CxPrime>
+          <Cx>0</Cx>
+          <Cy>0</Cy>
+          <focalLength>0</focalLength>
+          <hackBaseline>0</hackBaseline>
+        </plugin>
+      </sensor>
     </link>
     <joint name="camera_mount" type="fixed">
-      <child>cam_link</child>
+      <child>drone_cam</child>
       <parent>iris::base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <upper>0</upper>
-          <lower>0</lower>
+          <upper>1</upper>
+          <lower>-1</lower>
         </limit>
       </axis>
     </joint>
+
+    <!--add lidar-->
+    <link name="hokuyo_link">
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="collision">
+        <pose>0 0 0.3 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0 0.27 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://hokuyo/meshes/hokuyo.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <inertial>
+        <mass>0.016</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <sensor type="ray" name="laser">
+        <!-- <pose>0 0 0.3 3.14 0 0</pose> -->
+        <pose>0 0 0.3 0 0 0</pose>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>32</samples>
+              <resolution>1</resolution>
+              <!-- <min_angle>0</min_angle>
+              <max_angle>6.28</max_angle>  -->
+              <min_angle>-1.2</min_angle>
+              <max_angle>1.2</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.1</min>
+            <max>4</max>
+            <resolution>0.1</resolution>
+          </range>
+        </ray>
+        <plugin name="hokuyo_node" filename="libgazebo_ros_laser.so">
+          <robotNamespace></robotNamespace>
+          <topicName>/drone1_laser/scan</topicName>
+          <frameName>hokuyo_sensor_link</frameName>
+        </plugin>
+      </sensor>
+    </link>
+    <joint name="hokuyo_joint" type="fixed">
+      <pose>0 0 0 0 0 0</pose>
+      <child>hokuyo_link</child>
+      <parent>iris::base_link</parent>
+
+    </joint>
+
+    <!-- <include>
+      <uri>model://hokuyo</uri>
+      <pose>0.2 0 0.2 0 0 0</pose>
+    </include>
+    <joint name="hokuyo_joint" type="fixed">
+      <child>hokuyo::link</child>
+      <parent>iris::base_link</parent>
+    </joint> -->
 
 
 
@@ -206,8 +289,10 @@
     </plugin>
     <plugin name="arducopter_plugin" filename="libArduPilotPlugin.so">
       <fdm_addr>127.0.0.1</fdm_addr>
-      <fdm_port_in>9032</fdm_port_in>
-      <fdm_port_out>9033</fdm_port_out>
+      <!-- <fdm_port_in>9032</fdm_port_in>
+      <fdm_port_out>9033</fdm_port_out> -->
+      <fdm_port_in>9002</fdm_port_in>
+      <fdm_port_out>9003</fdm_port_out>
       <!--
           Require by APM :
           Only change model and gazebo from XYZ to XY-Z coordinates
@@ -217,7 +302,7 @@
       <imuName>iris::iris/imu_link::imu_sensor</imuName>
       <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
       <control channel="0">
-      <!--
+        <!--
           incoming control command [0, 1]
           so offset it by 0 to get [0, 1]
           and divide max target by 1.

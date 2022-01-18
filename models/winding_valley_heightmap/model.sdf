@@ -5,11 +5,19 @@
     <static>true</static>
     <link name="link">
       <visual name="visual_terrain">
+        <cast_shadows>false</cast_shadows>
         <geometry>
           <mesh>
             <uri>model://winding_valley_heightmap/meshes/river.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <uri>model://mud_box/materials/scripts</uri>
+            <uri>model://mud_box/materials/textures</uri>
+            <name>vrc/mud</name>
+          </script>
+        </material>
       </visual>
 
       <collision name="collision">
