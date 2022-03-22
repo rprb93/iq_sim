@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="palheiros_heightmap">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+          <!-- <heightmap> -->
+            <uri>model://palheiros_heightmap/materials/textures/palheiros_heightmap.stl</uri>
+            <!-- <size>820 820 12</size>
+            <pos>-250 163 -9</pos> -->
+          <!-- </heightmap> -->
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual_terrain">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://palheiros_heightmap/materials/textures/palheiros_heightmap.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://mud_box/materials/scripts</uri>
+            <uri>model://mud_box/materials/textures</uri>
+            <name>vrc/mud</name>
+          </script>
+        </material>
+      </visual>
+
+      <!-- <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://river_heightmap/materials/textures/river.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <heightmap>
+            <texture>
+              <diffuse>file://media/materials/textures/dirt_diffusespecular.png</diffuse>
+              <normal>file://media/materials/textures/flat_normal.png</normal>
+              <size>20</size>
+            </texture>
+            <texture>
+              <diffuse>file://media/materials/textures/fungus_diffusespecular.png</diffuse>
+              <normal>file://media/materials/textures/flat_normal.png</normal>
+              <size>20</size>
+            </texture>
+            <texture>
+              <diffuse>file://media/materials/textures/grass_diffusespecular.png</diffuse>
+              <normal>file://media/materials/textures/flat_normal.png</normal>
+              <size>20</size>
+            </texture>
+            <blend>
+              <min_height>9</min_height>
+              <fade_dist>1</fade_dist>
+            </blend>
+            <blend>
+              <min_height>10</min_height>
+              <fade_dist>2</fade_dist>
+            </blend>
+            <uri>model://river_heightmap/materials/textures/river_heightmapV4.png</uri>
+            <size>820 820 12</size>
+            <pos>-250 163 -9</pos>
+          </heightmap>
+        </geometry>
+      </visual> -->
+
+    </link>
+  </model>
+</sdf>
