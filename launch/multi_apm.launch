@@ -9,6 +9,8 @@
 	
 		<rosparam command="load" file="$(find mavros)/launch/apm_pluginlists.yaml" />
 		<rosparam command="load" file="$(find mavros)/launch/apm_config.yaml" />
+
+		<remap from="/boat1/mavros/obstacle/send" to="/boat1/laser/scan"/>
 	</node>
 
 
@@ -24,6 +26,9 @@
 		
 		<rosparam command="load" file="$(find mavros)/launch/apm_pluginlists.yaml" />
 		<rosparam command="load" file="$(find mavros)/launch/apm_config.yaml" />
+
+		<remap from="/boat2/mavros/obstacle/send" to="/boat2/laser/scan"/>
+
 	</node>
 
 <!---->
@@ -37,6 +42,8 @@
 
 		<rosparam command="load" file="$(find mavros)/launch/apm_pluginlists.yaml" />
 		<rosparam command="load" file="$(find mavros)/launch/apm_config.yaml" />
+
+		<remap from="/boat3/mavros/obstacle/send" to="/boat3/laser/scan"/>
 	</node>
 
 	<node pkg="mavros" type="mavros_node" name="mavros" required="false" clear_params="true" output="screen" respawn="true" ns="/drone1">

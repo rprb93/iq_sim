@@ -112,7 +112,7 @@
     </model>
 -->
 
-
+ 
    <model name="boat1">
     <pose>-190 87 0.1 0 0 0</pose>
      <include>
@@ -120,7 +120,14 @@
       </include>
     </model>
 
-
+<!-- 
+<model name="boat1">
+    <pose>2125 -2770 0.1 0 0 0</pose>
+     <include>
+        <uri>model://boat1</uri>
+      </include>
+    </model>
+-->
    <model name="boat2">
     <pose>-190 107 0.1 0 0 0</pose>
      <include>
@@ -168,8 +175,8 @@
        <ode>
         <solver>
           <type>quick</type>
-          <iters>100</iters>
-          <sor>1.0</sor>
+          <iters>20</iters>
+          <sor>1.2</sor>
         </solver>
         <constraints>
           <cfm>0.0</cfm>

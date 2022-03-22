@@ -14,244 +14,6 @@
           <izz>495.037</izz>
         </inertia>
       </inertial>
-      <collision name='base_link_fixed_joint_lump__left_float_collision'>
-        <pose >-0.4 1.03 0.2 3.14159 1.57079 3.14159</pose>
-        <geometry>
-          <cylinder>
-            <length>4</length>
-            <radius>0.2</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__left_mid_float_collision_1'>
-        <pose>1.85 1.03 0.3 0 1.38 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.5</length>
-            <radius>0.17</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__left_front_float_collision_2'>
-        <pose>2.3 1.03 0.4 0 1.3 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.45</length>
-            <radius>0.12</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__front_left_beam_lower_collision_3'>
-        <pose>0.9 0.85 1 0.78 -0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.5</length>
-            <radius>0.04</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__front_left_beam_upper_collision_4'>
-        <pose>0.9 0.6 1.18 1.35 -0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.2</length>
-            <radius>0.04</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__mid_left_beam_lower_collision_5'>
-        <pose>-0.65 0.99 0.7 0.1 0.25 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.45</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__mid_left_beam_medium_collision_6'>
-        <pose>-0.57 0.87 1.05 0.75 0.25 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.32</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__mid_left_beam_upper_collision_7'>
-        <pose>-0.55 0.65 1.17 1.35 0.25 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.3</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__rear_left_beam_lower_collision_8'>
-        <pose>-0.74 1.03 0.7 0 -0.15 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.45</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__rear_left_beam_medium_collision_9'>
-        <pose>-0.79 0.91 1.05 0.75 -0.15 -0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.32</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__rear_left_beam_upper_collision_10'>
-        <pose>-0.81 0.67 1.18 1.45 -0.15 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.3</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__left_joint_collision_11'>
-        <pose>0.58 1.03 0.6 0 -0.6 0</pose>
-        <geometry>
-          <box>
-            <size>0.65 0.2 0.1</size>
-          </box>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__right_float_collision_12'>
-        <pose>-0.4 -1.03 0.2 3.14159 1.57079 3.14159</pose>
-        <geometry>
-          <cylinder>
-            <length>4</length>
-            <radius>0.2</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__right_mid_float_collision_13'>
-        <pose>1.85 -1.03 0.3 0 1.38 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.5</length>
-            <radius>0.17</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__right_front_float_collision_14'>
-        <pose>2.3 -1.03 0.4 0 1.3 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.45</length>
-            <radius>0.12</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__front_right_beam_lower_collision_15'>
-        <pose>0.9 -0.85 1 -0.78 0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.5</length>
-            <radius>0.04</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__front_right_beam_upper_collision_16'>
-        <pose>0.9 -0.6 1.18 -1.35 0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.2</length>
-            <radius>0.04</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__mid_right_beam_lower_collision_17'>
-        <pose>-0.65 -0.99 0.7 -0.1 0.25 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.45</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__mid_right_beam_medium_collision_18'>
-        <pose>-0.57 -0.87 1.05 -0.75 0.25 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.32</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__mid_right_beam_upper_collision_19'>
-        <pose>-0.55 -0.65 1.17 -1.35 0.25 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.3</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__rear_right_beam_lower_collision_20'>
-        <pose>-0.74 -1.03 0.7 0 -0.15 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.45</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__rear_right_beam_medium_collision_21'>
-        <pose>-0.79 -0.91 1.05 -0.75 -0.15 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.32</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__rear_right_beam_upper_collision_22'>
-        <pose>-0.81 -0.67 1.18 -1.45 -0.15 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.3</length>
-            <radius>0.03</radius>
-          </cylinder>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__right_joint_collision_23'>
-        <pose>0.58 -1.03 0.6 0 -0.6 0</pose>
-        <geometry>
-          <box>
-            <size>0.65 0.2 0.1</size>
-          </box>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__top_base_collision_24'>
-        <pose>0 0 1.25 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>1.85 1 0.1</size>
-          </box>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__left_battery_collision_collision_25'>
-        <pose>0 1 0.6 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>0.6 0.4 0.31</size>
-          </box>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__right_battery_collision_collision_26'>
-        <pose>0 -1 0.6 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>0.6 0.4 0.31</size>
-          </box>
-        </geometry>
-      </collision>
       <visual name='base_link_fixed_joint_lump__dummy_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -324,15 +86,6 @@
           <izz>0.0144</izz>
         </inertia>
       </inertial>
-      <collision name='left_propeller_link_fixed_joint_lump__left_propeller_collision_collision'>
-        <pose>-0.08 0 0 3.14159 0.0 3.14159</pose>
-        <geometry>
-          <cylinder>
-            <length>0.18</length>
-            <radius>0.24</radius>
-          </cylinder>
-        </geometry>
-      </collision>
       <visual name='left_propeller_link_visual'>
         <pose>0 0 0 0 -1.57079 0</pose>
         <geometry>
@@ -375,15 +128,6 @@
           <izz>0.0144</izz>
         </inertia>
       </inertial>
-      <collision name='right_propeller_link_fixed_joint_lump__right_propeller_collision_collision'>
-        <pose>-0.08 0 0 3.14159 0.0 3.14159</pose>
-        <geometry>
-          <cylinder>
-            <length>0.18</length>
-            <radius>0.24</radius>
-          </cylinder>
-        </geometry>
-      </collision>
       <visual name='right_propeller_link_visual'>
         <pose>0 0 0 0 -1.57079 0</pose>
         <geometry>
@@ -427,14 +171,6 @@
           <izz>0.001</izz>
         </inertia>
       </inertial>
-      <!-- <collision name="collision">
-          <geometry>
-            <cylinder>
-              <radius>.005</radius>
-              <length>.018</length>
-            </cylinder>
-          </geometry>
-        </collision> -->
       <visual name='cam_link'>
     	<pose>0 0 0.15 0 1.5707 0</pose>
     	<geometry>
@@ -482,6 +218,74 @@
       </axis>
     </joint>
 
+
+        <!--add lidar-->
+    <link name="hokuyo_link">
+      <pose>1.2 0 0 0 0 0</pose>
+      <visual name="visual">
+        <pose>1.2 0 0.27 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://hokuyo/meshes/hokuyo.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <inertial>
+        <mass>0.016</mass>
+        <inertia>
+            <ixx>0.0001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0001</iyy>
+            <iyz>0</iyz>
+            <izz>0.0001</izz>
+            <!-- low intertia necessary to avoid not disturb the drone -->
+        </inertia>
+      </inertial>
+
+      <sensor type="ray" name="laser">
+        <pose>1.2 0 0.3 3.14 0 0</pose>
+        <visualize>true</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>32</samples>
+              <resolution>1</resolution>
+              <min_angle>-1.2</min_angle>
+              <max_angle>1.2</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.1</min>
+            <max>30</max>
+            <resolution>0.1</resolution>
+          </range>
+          <!-- <noise>
+            <type>Gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise> -->
+        </ray>
+        <plugin name="hokuyo_node" filename="libgazebo_ros_laser.so">
+          <robotNamespace>boat2</robotNamespace>
+          <topicName>laser/scan</topicName>
+          <frameName>hokuyo_sensor_link</frameName>
+        </plugin>
+      </sensor>
+    </link>
+
+    <joint name="hokuyo_joint" type="fixed">
+      <child>hokuyo_link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
     
     <plugin name='usv_dynamics_wamv_dynamics_plugin' filename='libgazebo_usv_dynamics_plugin.so'>
       <bodyName>base_link</bodyName>
