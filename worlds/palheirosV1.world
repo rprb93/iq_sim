@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri> 
+    </include>
+
+    <model name="terrain">
+      <pose>0 0 0 0 0 0</pose>
+        <include>
+          <uri>model://palheirosV1</uri>
+        </include>
+    </model>
+
+    <model name="water">
+      <pose>0 -200 0 0 0 0</pose>
+      <include>
+        <uri>model://ocean</uri>
+      </include>
+    </model>
+
+    <model name="boat1">
+      <pose>-100 -180 0.1 0 0 0</pose>
+      <include>
+        <uri>model://boat1</uri>
+      </include>
+    </model>
+
+
+    <model name="boat2">
+      <pose>-100 -190 0.1 0 0 0</pose>
+      <include>
+        <uri>model://boat2</uri>
+      </include>
+    </model>
+
+    <model name="boat3">
+    <pose>-100 -200 0.1 0 0 0</pose>
+     <include>
+        <uri>model://boat3</uri>
+      </include>
+    </model>
+
+    <model name="drone_with_camera">
+      <pose> 0 -25 2 0 0 1.54</pose>
+      <include>
+        <uri>model://drone_with_camera</uri>
+      </include>
+    </model>
+
+    <gui>
+      <camera name="user_camera">
+        <pose>-321 -155 250 0 0.83 -0.57</pose>
+      </camera>
+    </gui>
+
+
+    <physics name='default_physics' default='0' type='ode'>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+          <sor>1.0</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.9</erp>
+          <contact_max_correcting_vel>0.1</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>-1</real_time_update_rate>
+    </physics>
+  </world>
+</sdf>

@@ -36,10 +36,10 @@
     <!-- ================================================================== -->
 
     <gui>
-    <camera name="user_camera">
-      <pose>0.835 -65.36 789.35 0 1.54 1.54</pose>
-    </camera>
-  </gui>
+      <camera name="user_camera">
+        <pose>0.835 -65.36 789.35 0 1.54 1.54</pose>
+      </camera>
+    </gui>
 
     <!-- <physics name='default_physics' default='0' type='ode'>
       <ode>

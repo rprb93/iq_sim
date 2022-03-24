@@ -1,0 +1,16 @@
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find iq_sim)/worlds/palheirosV1.world"/>
+    <!-- more default parameters can be changed here   river instead of river_boat_big -->
+  </include>
+
+   <node pkg="tf" type="static_transform_publisher" name="boat1_camera_tf_broadcaster" args="0.0 0.0 0 0 0 0 boat1_local_base_link boat1_camera_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="boat2_camera_tf_broadcaster" args="0.0 0.0 0 0 0 0 boat2_local_base_link boat2_camera_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="boat3_camera_tf_broadcaster" args="0.0 0.0 0 0 0 0 boat3_local_base_link boat3_camera_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="drone1_camera_tf_broadcaster" args="0.0 0.0 0 0 0 0 drone1_local_base_link drone1_camera_link 100" />
+  
+  
+  <!--  <node pkg="tf" type="static_transform_publisher" name="drone_camera_tf_broadcaster" args="0.0 0.0 1 0 0 0 asv1_local_base_link drone_camera_link 11" /> -->
+
+</launch>
