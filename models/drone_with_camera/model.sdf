@@ -51,10 +51,10 @@
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
         <always_on>true</always_on>
         <update_rate>30</update_rate>
-        <cameraName>webcam</cameraName>
+        <cameraName>drone1_cam</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-        <frameName>camera_link</frameName>
+        <frameName>drone1_camera_link</frameName>
       </plugin>
     </sensor>
     </link>
@@ -70,7 +70,7 @@
       </axis>
     </joint>
 
- 
+
 
     <!-- plugins -->
     <plugin name="rotor_0_blade_1" filename="libLiftDragPlugin.so">
@@ -206,8 +206,8 @@
     </plugin>
     <plugin name="arducopter_plugin" filename="libArduPilotPlugin.so">
       <fdm_addr>127.0.0.1</fdm_addr>
-      <fdm_port_in>9002</fdm_port_in>
-      <fdm_port_out>9003</fdm_port_out>
+      <fdm_port_in>9032</fdm_port_in>
+      <fdm_port_out>9033</fdm_port_out>
       <!--
           Require by APM :
           Only change model and gazebo from XYZ to XY-Z coordinates
