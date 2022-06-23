@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.6">
+  <model name="palheirosV2">
+    <pose>0 0 0 3.14 0 0</pose>
+    <static>true</static>
+    <link name="link">
+      <visual name="visual_terrain">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://palheirosV2/meshes/heightmap.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://mud_box/materials/scripts</uri>
+            <uri>model://mud_box/materials/textures</uri>
+            <name>vrc/mud</name>
+          </script>
+        </material>
+      </visual>
+
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://palheirosV2/meshes/heightmap.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

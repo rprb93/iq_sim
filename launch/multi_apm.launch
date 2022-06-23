@@ -46,7 +46,7 @@
 		<remap from="/boat3/mavros/obstacle/send" to="/boat3/laser/scan"/>
 	</node>
 
-	<!-- <node pkg="mavros" type="mavros_node" name="mavros" required="false" clear_params="true" output="screen" respawn="true" ns="/drone1">
+	<node pkg="mavros" type="mavros_node" name="mavros" required="false" clear_params="true" output="screen" respawn="true" ns="/drone1">
 		<param name="fcu_url" value="udp://127.0.0.1:14581@14585" />
 		<param name="gcs_url" value="" />
 		<param name="target_system_id" value="4" />
@@ -56,6 +56,8 @@
 	
 		<rosparam command="load" file="$(find mavros)/launch/apm_pluginlists.yaml" />
 		<rosparam command="load" file="$(find mavros)/launch/apm_config.yaml" />
-	</node> -->
+
+		<remap from="/drone1/mavros/obstacle/send" to="/drone1/laser/scan"/>
+	</node>
 	
 </launch>
