@@ -12,10 +12,7 @@
 
 		<remap from="/boat1/mavros/obstacle/send" to="/boat1/laser/scan"/>
 	</node>
-
-
-
-
+	
 	<node pkg="mavros" type="mavros_node" name="mavros" required="false" clear_params="true" output="screen" respawn="true" ns="/boat2">
 		<param name="fcu_url" value="udp://127.0.0.1:14591@14595" />
 		<param name="gcs_url" value="" />
@@ -31,7 +28,6 @@
 
 	</node>
 
-<!---->
 	<node pkg="mavros" type="mavros_node" name="mavros" required="false" clear_params="true" output="screen" respawn="true" ns="/boat3">
 		<param name="fcu_url" value="udp://127.0.0.1:14571@14575" />
 		<param name="gcs_url" value="" />
