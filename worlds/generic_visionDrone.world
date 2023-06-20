@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+
+    <scene>
+      <ambient>0.01 0.01 0.01 1.0</ambient>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+      <shadows>1</shadows>
+    </scene>
+
+    <!-- Global light sources -->
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 -0.5 -1.0</direction>
+    </light>
+    <light name='sun_diffuse' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 -10 0 -0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>0.3 0.3 0.3 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>0.5 0.5 -1.0</direction>
+    </light>
+
+    <!-- ================================================================== -->
+
+    <model name="terrain">
+      <pose>0 0 0 0 0 0</pose>
+        <include>
+          <uri>model://generic_model</uri>
+        </include> 
+    </model> 
+
+    <!-- ================================================================== -->
+
+    <!-- <include>
+      <name>pine_tree_00</name>
+      <pose>0 0 0 0 0 0 </pose>
+      <uri>model://pine_tree</uri>
+    </include> -->
+
+    <include>
+      <name>pine_tree_01</name>
+      <pose>200 0 0 0 0 0 </pose>
+      <uri>model://pine_tree</uri>
+    </include>
+
+    <include>
+      <name>pine_tree_02</name>
+      <pose>0 200 0 0 0 0 </pose>
+      <uri>model://pine_tree</uri>
+    </include>
+
+    <include>
+      <name>pine_tree_03</name>
+      <pose>200 200 0 0 0 0 </pose>
+      <uri>model://pine_tree</uri>
+    </include>
+
+    <!-- ================================================================== -->
+
+    <include>
+      <name>hatchback_blue</name>
+      <pose> 100 100 0 0 0 1.57 </pose>
+      <uri>model://hatchback_blue</uri>
+    </include>
+    <!-- ================================================================== -->
+
+    <!-- <include>
+      <name>radio_tower</name>
+      <pose> -80 50 3 0 0 0 </pose>
+      <uri>model://radio_tower</uri>
+    </include> -->
+
+    <!-- ================================================================== -->
+
+    <model name="drone_with_camera">
+      <include>
+        <uri>model://drone_with_camera</uri>
+      </include>
+      <!-- <pose> 160 100 0.5 0 0 0</pose> -->
+      <pose> 0 0 0.5 0 0 0</pose>
+    </model>
+
+    <!-- ================================================================== -->
+
+    <!-- <gui>
+    <camera name="user_camera">
+      <pose>-129 34 37 0 0.55 0.85</pose>
+    </camera>
+  </gui> -->
+
+  <!-- Point the camera so the robot's in-frame -->
+  <gui fullscreen='0'>
+    <camera name='user_camera'>
+      <pose>155.83 98.59 0.90 0.0 0.20 0.32</pose>
+      <view_controller>orbit</view_controller>
+    </camera>
+  </gui>
+
+  </world>
+</sdf>
